@@ -1,0 +1,27 @@
+[
+  {
+    "name": "development",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "logging": true,
+    "synchronize": true,
+    "database": "boilerplate-server",
+    "entities": ["dist/entities/*.js"]
+  },
+  {
+    "name": "test",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "logging": false,
+    "synchronize": true,
+    "dropSchema": true,
+    "database": "boilerplate-server-test",
+    "entities": ["dist/entities/*.js"]
+  }
+]
